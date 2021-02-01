@@ -7,7 +7,7 @@ docker-compose build
 docker-compose up -d
 ```
 
-### Init Users table
+### Init table
 Open and execute script.
 ```
 queries\init_table.sql
