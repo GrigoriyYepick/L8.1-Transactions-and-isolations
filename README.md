@@ -26,13 +26,13 @@ It will init Authors table with values:
 | lost_update.sql | lost_update_2.sql     | 
 | ------------- | ----------------------- | 
 | Starts transaction |      | 
-| Calculates AVG books count  for authors with Name = 'Arthur'<br> AVG = 27     |  | 
+| Calculates AVG books count  for authors with Name = 'Arthur' and stores into var<br> AVG = 27     |  | 
 |  | Starts transaction     | 
 |  | Reads to var books count for author 'Arthur Doyle' |
 |  | Updates books count for author 'Arthur Doyle' as [old value] + 100 |
 |  | Commits transaction |
 |  | New value<br><br><pre>"Id" "FirstName" "SecondName" "Books_Count"<br>"4"  "Arthur"    "Doyle"      "133" |
-| Updates books count for authors with Name = 'Arthur' | |
+| Updates books count for authors with Name = 'Arthur' with value from var | |
 | Commits transaction | |
 | New values <br><br><pre>"Id" "FirstName" "SecondName" "Books_Count"<br>"1"  "Arthur"    "Clarke"     "27"<br>"4"  "Arthur"    "Doyle"      "27" |  |
 
