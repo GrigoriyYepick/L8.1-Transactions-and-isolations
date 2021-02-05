@@ -66,7 +66,8 @@ It will init Authors table with values:
 | Current value<br>"@books"<br>"4" |  |
 | Commits transaction |  |
 
-## Phantom reads
+## Phantom reads (did not reach)
+**During lecture got why - the read in transaction with REPEATABLE READ was done from snapshot**
 
 **Table values restored to initial state**
 
